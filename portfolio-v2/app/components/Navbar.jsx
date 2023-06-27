@@ -17,16 +17,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] ease-in duration-500">
+    <div className="fixed w-full h-20 shadow-md shadow-black z-[100] ease-in duration-500">
       {/* Navbar Regular */}
       <div className="navbar">
+        <div>
         <Image
           src={logo}
           width="55"
           height="20"
-          className="cursor-pointer"
           alt="logo"
         />
+        </div>
         {/* Navbar Links */}
         <div>
           <ul className="hidden md:flex">
@@ -47,13 +48,13 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="md:hidden cursor-pointer">
-            <AiOutlineMenu onClick={handleNav} size={22} />
+            <AiOutlineMenu onClick={handleNav} className="active:scale-95" size={22} />
           </div>
         </div>
       </div>
 
       {/* Overlay when sidebar is active */}
-      <div className={nav ? 'md:hidden fixed left-0 top-0 xsm:w-full xsm:h-screen bg-black/40 ease-in duration-500 active:outline-none' : ''}>
+      <div className={nav ? 'md:hidden fixed left-0 top-0 xsm:w-full xsm:h-screen bg-black/20 ease-in duration-500 active:outline-none' : ''}>
         {/* Sidebar */}
         <div className={nav ? 'sidebar-open' : 'sidebar-closed'}>
           <div>
@@ -69,7 +70,7 @@ const Navbar = () => {
                 <AiOutlineClose onClick={handleNav} size={22} />
               </div>
             </div>
-            <div className="border-b border-violet-600/30 my-4 flex items-center justify-center">
+            <div className="border-b border-violet-600/60 my-4 flex items-center justify-center">
               <p className="py-4 tracking-wide uppercase font-light xsm:text-sm sm:text-sm md:text-base">
                 Consult | Develop | Excel
               </p>

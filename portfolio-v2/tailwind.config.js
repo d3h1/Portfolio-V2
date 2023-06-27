@@ -24,7 +24,7 @@ module.exports = {
         '4xl': '2rem',
       },
       colors: {
-        'gray-dark': '#273444',
+        'gray-dark': '#181818',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
         'main-dark': '#41436A',

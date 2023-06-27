@@ -22,11 +22,8 @@
   .sidebar-logos {
     @apply cursor-pointer text-sm uppercase hover:border-b border-b-violet-600 p-2;
   }
-  .footer-logos {
-    @apply flex flex-row bg-gradient-to-b from-gray-dark to-main-dark justify-end items-center px-6 py-4;
-  }
   .rounded-button {
-    @apply border border-gray-dark rounded-full p-2 shadow-lg cursor-pointer hover:border-black/40 active:scale-95;
+    @apply border border-gray-dark rounded-full p-2 shadow-sm shadow-violet-600 cursor-pointer hover:border-violet-600/80 active:scale-95;
   }
 
   /* Attributes */
@@ -67,4 +64,8 @@
   button {
     @apply shadow-xl shadow-gray rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
+}
+
+.color {
+    background-color: #181818;
 }
