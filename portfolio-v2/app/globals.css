@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height: 100vh;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@layer components {
+    /* Computer Body Styles */
+    .page-container {
+        @apply flex flex-col items-center justify-center min-h-screen relative container max-w-full bg-gray-dark
+    }
+    .navbar {
+        @apply flex flex-row bg-gradient-to-b from-gray-dark to-main-dark justify-between items-center px-6 py-6
+    }
+    .footer {
+        @apply flex flex-row bg-gradient-to-b from-gray-dark to-main-dark justify-end items-center px-6 py-4
+    }
+    .nav-footer-container {
+        @apply flex items-center bg-gradient-to-r from-highlight to-gray w-full p-1 
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    /* Mobile Body Styles */
+    .nav-footer-container-mobile {
+        @apply flex items-center justify-center bg-gradient-to-r from-highlight to-gray w-full p-1
+    }
+    .page-container-mobile {
+        @apply flex flex-col items-center justify-center min-h-screen relative container max-w-full bg-gradient-to-b from-gray-dark to-main-dark
+    }
+    .navbar-mobile {
+        @apply flex flex-row bg-gradient-to-b from-gray-dark to-main-dark justify-between items-center px-6 py-6
+    }
+    .footer-mobile {
+        @apply flex flex-row bg-gradient-to-b from-gray-dark to-main-dark justify-center items-center px-6 py-4
+    }
+
+
+    /* Attributes */
+    .form {
+        @apply flex flex-col m-28 p-5 bg-main-dark rounded-sm
+    }
+    .form-control {
+        @apply relative mx-5 my-8 w-80 
+    }
+    .input {
+        @apply block w-full rounded-md p-5 text-gray-light bg-gray outline-none text-base ease-in-expo duration-300 border border-gray-dark
+    }
+    .label {
+        @apply absolute top-5 left-2 ease-in-expo duration-300 text-gray-light text-lg
+    }
+    .logo-button {
+        @apply relative flex items-center rounded-md overflow-hidden gap-x-4  hover:scale-105 transition 
+    }
 }
