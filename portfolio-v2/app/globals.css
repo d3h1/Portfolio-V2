@@ -40,7 +40,7 @@
     @apply absolute top-5 left-2 ease-in-expo duration-300 text-gray-light text-lg;
   }
   .logo-button {
-    @apply relative flex items-center rounded-md overflow-hidden gap-x-4  hover:scale-105 transition;
+    @apply relative flex items-center rounded-md overflow-hidden gap-x-4 hover:scale-105 transition;
   }
 
   /* Body Features */
