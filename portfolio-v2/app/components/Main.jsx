@@ -9,12 +9,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Main = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  // const [Spaceship, setSpaceship] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // useEffect(() => {
-  //   import('../../public/assets/tech/ufo.svg')
-  //     .then(({ ReactComponent }) => setSpaceship(() => ReactComponent));
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+    }
+  }, []);
 
   const handleMouseMove = (event) => {
     setPosition({ x: event.clientX, y: event.clientY });
@@ -25,18 +26,20 @@ const Main = () => {
       className="w-full h-screen text-center bg-abstract-bg bg-no-repeat bg-cover"
       onMouseMove={handleMouseMove}
     >
-      <img
-        src={'/assets/projects/ufo.png'}
-        alt="Spaceship"
-        style={{
-          position: "absolute",
-          top: `${position.y - 25}px`,
-          left: `${position.x - 25}px`,
-          width: "50px",
-          height: "50px",
-          pointerEvents: 'none',
-        }}
-      />
+      {!isMobile && (
+        <img
+          src="/assets/projects/ufo.png"
+          alt="Spaceship"
+          style={{
+            position: "absolute",
+            top: `${position.y - 25}px`,
+            left: `${position.x - 25}px`,
+            width: "50px",
+            height: "50px",
+            pointerEvents: "none",
+          }}
+        />
+      )}
 
       <div className="page-container">
         <div className="flex flex-col items-center">
