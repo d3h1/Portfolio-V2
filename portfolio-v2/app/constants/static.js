@@ -1,25 +1,19 @@
-const logo = "/../public/assets/logo.png";
-
-// import {creator} from '../public/assets/creator.png'
-// import {web} from '../../public/assets/web.png'
-// import {mobile} from '../../public/assets/mobile.png'
-
 const services = [
   {
-    title: "Fullstack Developer (2 Years)",
-    // icon: web,
-  },
-  {
     title: "Software Engineer (3 Years)",
-    // icon: mobile,
+    icon: '/assets/projects/creator.png',
   },
   {
-    title: "Systems Engineer (1 Year)",
-    // icon: creator,
+    title: "Web Developer (2 Years)",
+    icon: '/assets/projects/web.png',
+  },
+  {
+    title: "Systems Designer (1 Year)",
+    icon: '/assets/projects/mobile.png',
   },
   {
     title: "AI Developer (1 Year)",
-    icon: {logo},
+    icon: '/assets/projects/backend.png',
   },
 ];
 

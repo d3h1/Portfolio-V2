@@ -8,7 +8,7 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
-  const logo = "/../public/assets/logo.png";
+  const logo = "/assets/logo.png";
 
   const [nav, setNav] = useState(false);
 
@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-md shadow-black z-[100] ease-in duration-500">
+    <div className="fixed w-full xsm:h-[70px] md:h-24 xsm:shadow-none sm:shadow-md shadow-black z-[100] ease-in duration-500">
       {/* Navbar Regular */}
       <div className="navbar">
         <div>
@@ -25,6 +25,7 @@ const Navbar = () => {
           src={logo}
           width="55"
           height="20"
+          className="cursor-pointer xsm:hidden sm:flex"
           alt="logo"
         />
         </div>
@@ -72,7 +73,7 @@ const Navbar = () => {
             </div>
             <div className="border-b border-violet-600/60 my-4 flex items-center justify-center">
               <p className="py-4 tracking-wide uppercase font-light xsm:text-sm sm:text-sm md:text-base">
-                Consult | Develop | Excel
+              DESIGN | DEVELOP | DEPLOY
               </p>
             </div>
           </div>

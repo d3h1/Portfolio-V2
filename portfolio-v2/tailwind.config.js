@@ -36,10 +36,11 @@ module.exports = {
         'dark': '#333', 
       },
       screens: {
-        xsm: '350px',
+        xsm: '300px',
         sm: '380px',
+        smd:'500px',
         md: '768px',
-        lg: '976px',
+        lg: '1293px',
         xl: '1440px',
       },
       fontFamily: {
@@ -54,9 +55,6 @@ module.exports = {
         '1': '100ms',
         '2': '200ms',
         '3': '300ms',
-      },
-      listStyleImage: {
-        facebook: 'url("./fashion-v1/src/app/images/Facebook.png)'
       }
     },
   },
