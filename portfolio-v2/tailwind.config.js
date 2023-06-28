@@ -11,6 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'abstract-bg': "url(../public/assets/space-bg.jpg)"
       },
       scale: {
           '70' : '0.7',
