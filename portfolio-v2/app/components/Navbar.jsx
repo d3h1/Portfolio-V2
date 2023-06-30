@@ -20,6 +20,7 @@ const Navbar = () => {
     <div className="fixed w-full xsm:h-[70px] md:h-24 xsm:shadow-none sm:shadow-md shadow-black z-[100] ease-in duration-500">
       {/* Navbar Regular */}
       <div className="navbar">
+      {/* flex xsm:bg-transparent sm:bg-gray-dark/90 justify-between items-center w-full h-full px-2 md:text-lg 2xl:px-16 */}
         <div>
         <Image
           src={logo}

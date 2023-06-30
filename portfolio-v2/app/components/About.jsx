@@ -38,7 +38,7 @@ const About = () => {
 
   return (
     <div className="w-full sm:h-screen md:h-screen p-2 flex flex-col py-16 bg-gradient-to-t from-gray-dark to-black">
-      <div className="max-w-[1450px] m-auto md:grid md:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-[1450px] m-auto xmd:grid md:grid-cols-2 lg:grid-cols-3">
         <div className="col-span-1 m-2 items-center">
           <p className="uppercase text-xl tracking-widest text-violet-600">
             About
